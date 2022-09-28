@@ -106,14 +106,14 @@ if os.environ.get('DB_ENGINE') and os.environ.get('DB_ENGINE') == "mysql":
     }
 else:
     DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'deqtmo7pji1nfo',
-       'USER': 'cffkymastwdxvh',
-       'PASSWORD': '0ef6fad2a6a9d0ba687a297cb035fad797375382a0c75133752d1ce60663b713',
-       'HOST': 'ec2-44-207-253-50.compute-1.amazonaws.com',
-       'PORT': '5432',
-   }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'deqtmo7pji1nfo',
+        'USER': 'cffkymastwdxvh',
+        'PASSWORD': '0ef6fad2a6a9d0ba687a297cb035fad797375382a0c75133752d1ce60663b713',
+        'HOST': 'ec2-44-207-253-50.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
 }
 
 # Password validation
