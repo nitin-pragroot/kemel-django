@@ -30,9 +30,7 @@ DEBUG = env('DEBUG')
 ASSETS_ROOT = os.getenv('ASSETS_ROOT', '/static/assets')
 
 # load production server from .env
-# ALLOWED_HOSTS = ['localhost', 'localhost:85', '127.0.0.1', env('SERVER', default='127.0.0.1')]
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = ['localhost', 'localhost:85', '127.0.0.1', env('SERVER', default='127.0.0.1')]
 CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + env('SERVER', default='127.0.0.1')]
 
 # Application definition
@@ -108,15 +106,12 @@ if os.environ.get('DB_ENGINE') and os.environ.get('DB_ENGINE') == "mysql":
     }
 else:
     DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'deqtmo7pji1nfo',
-        'USER': 'cffkymastwdxvh',
-        'PASSWORD': '0ef6fad2a6a9d0ba687a297cb035fad797375382a0c75133752d1ce60663b713',
-        'HOST': 'ec2-44-207-253-50.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'db.sqlite3',
+        }
     }
-}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
