@@ -1,0 +1,124 @@
+<!-- [ navigation menu ] start -->
+<nav class="pcoded-navbar menupos-fixed ">
+	<div class="navbar-wrapper ">
+		<div class="navbar-brand header-logo">
+			<a href="/" class="b-brand">
+				<div class="b-bg">
+					<i class="feather icon-trending-up"></i>
+				</div>
+				<span class="b-title">Kemal</span>
+			</a>
+			<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+		</div>
+		<div class="navbar-content scroll-div ">
+
+
+			<ul class="nav pcoded-inner-navbar ">
+				<li class="nav-item pcoded-menu-caption">
+					<label>Navigation</label>
+				</li>
+				<!-- <li class="nav-item"><a href="/user_profile/" class="nav-link"><span
+						            class="pcoded-micon"><i class="feather icon-user"></i></span><span
+						            class="pcoded-mtext">My Profile</span></a></li>
+						{% if request.user.is_superuser %}
+                        <li class="nav-item"><a href="/user_list/" class="nav-link"><span
+							class="pcoded-micon"><i class="feather icon-users"></i></span><span
+							class="pcoded-mtext">Users List</span></a></li>
+						{% endif %}	 -->
+
+				<li
+					class="nav-item pcoded-hasmenu">
+					<a class="nav-link" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button"
+					role="tab" aria-controls="overview" aria-selected="false"><span class="pcoded-micon"><i
+								class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+				</li>
+
+
+				<li
+					class="nav-item pcoded-hasmenu">
+					<a href="#" class="nav-link"><span class="pcoded-micon"><i
+								class="feather icon-layout"></i></span><span class="pcoded-mtext">Leads</span></a>
+				</li>
+				<li data-username="widget Statistic Data Table User card Chart" class="nav-item pcoded-hasmenu">
+					<a class="nav-link" id="clients-tab" data-bs-toggle="tab" data-bs-target="#clients" type="button"
+						role="tab" aria-controls="clients" aria-selected="false"><span class="pcoded-micon"><i
+								class="fas fa-users"></i></span><span class="pcoded-mtext">Clients</span></a>
+				</li>
+				<li data-username="widget Statistic Data Table User card Chart" class="nav-item pcoded-hasmenu">
+					<a class="nav-link" id="hr-tab" data-bs-toggle="tab" data-bs-target="#hr" type="button"
+					role="tab" aria-controls="hr" aria-selected="false"><span class="pcoded-micon"><i
+								class="feather icon-layers"></i></span><span class="pcoded-mtext">HR</span></a>
+				</li>
+				<li data-username="widget Statistic Data Table User card Chart" class="nav-item pcoded-hasmenu">
+					<a href="#" class="nav-link"><span class="pcoded-micon"><i class="fas fa-briefcase"></i></span><span
+							class="pcoded-mtext">Work</span></a>
+				</li>
+				<li data-username="widget Statistic Data Table User card Chart" class="nav-item pcoded-hasmenu">
+					<a href="#" class="nav-link"><span class="pcoded-micon"><i
+								class="fas fa-hand-holding-usd"></i></span><span
+							class="pcoded-mtext">Finanace</span></a>
+				</li>
+				<li data-username="widget Statistic Data Table User card Chart" class="nav-item pcoded-hasmenu">
+					<a href="#" class="nav-link"><span class="pcoded-micon"><i
+								class="fas fa-shopping-basket"></i></span><span class="pcoded-mtext">Products</span></a>
+				</li>
+				<li data-username="widget Statistic Data Table User card Chart" class="nav-item pcoded-hasmenu">
+					<a href="#" class="nav-link"><span class="pcoded-micon"><i
+								class="fas fa-shopping-cart"></i></span><span class="pcoded-mtext">Orders</span></a>
+				</li>
+				<li data-username="widget Statistic Data Table User card Chart" class="nav-item pcoded-hasmenu">
+					<a href="#" class="nav-link"><span class="pcoded-micon"><i
+								class="fas fa-ticket-alt"></i></span><span class="pcoded-mtext">Tickets</span></a>
+				</li>
+				<li data-username="widget Statistic Data Table User card Chart" class="nav-item pcoded-hasmenu">
+					<a href="#" class="nav-link"><span class="pcoded-micon"><i
+								class="feather icon-calendar"></i></span><span class="pcoded-mtext">Events</span></a>
+				</li>
+				<li class="nav-item pcoded-menu-caption">
+					<label>table</label>
+				</li>
+
+				<li data-username="Full Calendar" class="nav-item"><a href="/extension-full-calendar.html"
+						class="nav-link"><span class="pcoded-micon"><i class="feather icon-calendar"></i></span><span
+							class="pcoded-mtext">Full
+							calendar</span></a></li>
+				<li class="nav-item pcoded-menu-caption">
+					<label>Other</label>
+				</li>
+				<li data-username="Menu levels Menu level 2.1 Menu level 2.2" class="nav-item pcoded-hasmenu">
+					<a href="#" class="nav-link"><span class="pcoded-micon"><i
+								class="feather icon-menu"></i></span><span class="pcoded-mtext">Menu levels</span></a>
+					<ul class="pcoded-submenu">
+						<li><a href="">Menu Level 2.1</a></li>
+						<li class="pcoded-hasmenu">
+							<a href="#">Menu level 2.2</a>
+							<ul class="pcoded-submenu">
+								<li><a href="">Menu level 3.1</a></li>
+								<li><a href="">Menu level 3.2</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li data-username="Disabled Menu" class="nav-item disabled"><a href="#" class="nav-link"><span
+							class="pcoded-micon"><i class="feather icon-power"></i></span><span
+							class="pcoded-mtext">Disabled menu</span></a></li>
+				<li data-username="Sample Page" class="nav-item"><a href="/sample-page.html" class="nav-link"><span
+							class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span
+							class="pcoded-mtext">Sample
+							page</span></a></li>
+				<li class="nav-item pcoded-menu-caption">
+					<label>Support</label>
+				</li>
+				<li data-username="Need Support" class="nav-item">
+					<a href="https://appseed.us/support/" class="nav-link" target="_blank">
+						<span class="pcoded-micon"><i class="feather icon-help-circle"></i></span><span
+							class="pcoded-mtext">
+							Need support?</span></a>
+				</li>
+
+			</ul>
+
+		</div>
+	</div>
+</nav>
+<!-- [ navigation menu ] end -->

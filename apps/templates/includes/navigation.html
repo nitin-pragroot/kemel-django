@@ -1,0 +1,121 @@
+<!-- [ Header ] start -->
+<header class="navbar pcoded-header navbar-expand-lg navbar-light ">
+
+    <div class="m-header">
+        <a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+        <a href="/" class="b-brand">
+            <div class="b-bg">
+                <i class="feather icon-trending-up"></i>
+            </div>
+            <span class="b-title">Kemal</span>
+        </a>
+    </div>
+    <a class="mobile-menu" id="mobile-header" href="#!">
+        <i class="feather icon-more-horizontal"></i>
+    </a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+            <li>
+                <ul class="breadcrumb">
+
+                    <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li><a href="#!" class="full-screen" onclick="javascript:toggleFullScreen()"><i
+                        class="feather icon-maximize"></i></a></li>
+
+            <li class="nav-item">
+                <div class="main-search">
+                    <div class="input-group">
+                        <input type="text" id="m-search" class="form-control" placeholder="Search . . .">
+                        <a href="#!" class="input-group-append search-close">
+                            <i class="feather icon-x input-group-text"></i>
+                        </a>
+                        <span class="input-group-append search-btn btn btn-primary">
+                            <i class="feather icon-search input-group-text"></i>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#!" class="displayChatbox"><i class="icon feather icon-mail"></i></a></li>
+            <li>
+                <div class="dropdown drp-user">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="icon feather icon-settings"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end profile-notification">
+                        <div class="pro-head">
+                            <img src="{% if user.image %}{{ ASSETS_ROOT }}{{user.image}}{% else %}
+                                          {{ ASSETS_ROOT }}/images/user/avatar-5.jpg
+                                          {% endif %}" class="img-radius hei-40" alt="User-Profile-Image">
+                            <span>
+                                {{ request.user.username }}
+                            </span>
+                            <a href="{% url 'logout' %}" class="dud-logout" title="Logout">
+                                <i class="feather icon-log-out"></i>
+                            </a>
+                        </div>
+                        <ul class="pro-body">
+                            <li><a href="/user_profile/" class="dropdown-item"><i class="feather icon-user"></i>
+                                    Profile</a></li>
+                            <li><a href="{% url 'logout' %}" class="dropdown-item">
+                                    <i class="feather icon-log-out"></i>LOGOUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</header>
+<!-- [ Main Content ] start -->
+<div class="pcoded-navbar-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-navbar-content">
+            <div class="pcoded-inner-content topnav">
+                <ul class="nav pcoded-inner-navbar" id="myTab" role="tablist">
+                    <li class="nav-item pcoded-hasmenu">
+                        <a class="nav-link" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                            type="button" role="tab" aria-controls="Overview" aria-selected="true"><span
+                                class="pcoded-mtext">Overview</span></a>
+                    </li>
+                    <hr>
+                    </hr>
+                    <li class="nav-item pcoded-hasmenu">
+                        <a class="nav-link" id="project-tab" data-bs-toggle="tab" data-bs-target="#project"
+                            type="button" role="tab" aria-controls="project" aria-selected="false"><span
+                                class="pcoded-mtext">Project</span></a>
+                    </li>
+                    <hr>
+                    </hr>
+                    <li class="nav-item pcoded-hasmenu">
+                        <a class="nav-link" id="clients-tab" data-bs-toggle="tab" data-bs-target="#clients"
+                            type="button" role="tab" aria-controls="clients" aria-selected="false"><span
+                                class="pcoded-mtext">Client</span></a>
+                    </li>
+                    <li class="nav-item pcoded-hasmenu">
+                        <a class="nav-link" id="hr-tab" data-bs-toggle="tab" data-bs-target="#hr"
+                        type="button" role="tab" aria-controls="hr" aria-selected="false"><span class="pcoded-mtext">HR</span></a>
+                    </li>
+                    <li class="nav-item pcoded-hasmenu">
+                        <a class="nav-link"><span class="pcoded-mtext">Ticket</span></a>
+                    <li class="nav-item pcoded-hasmenu">
+                        <a class="nav-link"><span class="pcoded-mtext">Finanace</span></a>
+                    </li>
+                    <li class="nav-item pcoded-hasmenu"></li>
+                </ul>
+                <!-- <nav class="nav">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Profile</a>
+                    <a href="#" class="nav-item nav-link">Messages</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+                </nav> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ Header ] end -->
